@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Guilherme Aranda</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Menu de navegação -->
+    <header>
+        <nav class="menu">
+
+            <a href="index.html" class="logo">
+                Gui Dev<span>.</span>
+            </a>
+
+            <ul class="menu-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="form.html">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contato">
+
+            <p class="destaque">VAMOS CONSTRUIR SEU PROJETO JUNTOS?</p>
+
+            <h1>Entre em <span>contato</span></h1>
+
+            <p class="contato-descrição">
+
+                Tem uma ideia, uma oportunidade ou simplesmente quer trocar
+                uma ideia sobre tecnologia e desenvolvimento?
+
+                Estou aberto a novas conexões e conversas.
+                Será um prazer conhecer seu projeto!
+            </p>
+
+            <form action="formAction.html" method="GET" class="formulario">
+
+                <!--Nome-->
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        minlength="3"
+                        pattern="[A-Za-zÀ-ÿ ]{3,60}"
+                        title="Digite um nome com pelo menos 3 letras."
+                        required
+                    >    
+                </div>
+
+                <!--E-mail-->
+                <div class="campo">
+                    <label for="email">E-mail</label>
+
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@email.com"
+                        maxlength="100"
+                        required
+                    >    
+                </div>
+
+                <!--Assunto-->
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>
+                            Selecione um assunto
+                        </option>
+
+                        <option value="Oportunidade profissional">
+                            Oportunidade profissional
+                        </option>
+
+                        <option value="Projeto">
+                            Projeto
+                        </option>
+
+                        <option value="Outro assunto">
+                            Outro assunto
+                        </option>
+                    </select>
+                </div>
+
+                <!--Mensagem-->
+                <div class="campo">
+                    <label for="mensagem">O que manda?</label>
+
+                    <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    minlength="10"
+                    maxlength="500"
+                    placeholder="Escreva aqui!"
+                    required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="botao-enviar">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Guilherme Aranda. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+    
+</body>
+</html>
